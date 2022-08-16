@@ -1,3 +1,4 @@
+/*01*/
 :root {
     --fuenteHeading: 'PT Sans', sans-serif;
     --fuenteParafos: 'Open Sans', sans-serif;
@@ -22,7 +23,7 @@ body {
     line-height: 2;
 }
 
-/* Globales*/
+/* 02 Globales*/
 .contenedor {
     max-width: 120rem;
     width: 90%;
@@ -72,7 +73,7 @@ img {
     text-align: center;
 }
 
-/* Header*/
+/* 03 Header*/
 .header{
     background-image: url(../img/banner.jpg);
     height: 60rem;
@@ -80,9 +81,47 @@ img {
     background-repeat: no-repeat;
     background-position: center center;
 }
-
+/*04*/
 .header__texto{
     text-align: center;
     color: var(--blanco);
     margin-top: 5rem;
+}
+/*10*/
+@media (min-width: 768px){
+    .header__texto{
+        margin-top: 15rem;
+    }
+}
+/*05*/
+@media (min-width: 768px){
+    .barra{
+        display: flex;
+        justify-content: space-between; /*para alinear orizontan*/
+        align-items: center; /*para alinear vertical*/
+    }
+}
+/*07*/
+.logo{
+    color: var(--blanco);
+}
+.logo__nombre{
+    font-weight: 400;
+}
+.logo__bold{
+    font-weight: 700;
+}
+/*09*/
+@media (min-width: 768px){
+    .navegacion{
+        display: flex;
+        gap: 2rem;
+    }
+}
+/*08*/
+.navegacion__enlace{
+    display: block;
+    text-align: center;
+    font-size: 1.8rem;
+    color: var(--blanco);
 }
