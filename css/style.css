@@ -3,6 +3,7 @@
     --fuenteHeading: 'PT Sans', sans-serif;
     --fuenteParafos: 'Open Sans', sans-serif;
 
+    --gris: #e1e1e1;
     --primario: #784d3c;
     --blanco: #ffffff;
     --negro: #000000;
@@ -87,7 +88,7 @@ img {
     color: var(--blanco);
     margin-top: 5rem;
 }
-/*10*/
+/*09*/
 @media (min-width: 768px){
     .header__texto{
         margin-top: 15rem;
@@ -101,7 +102,7 @@ img {
         align-items: center; /*para alinear vertical*/
     }
 }
-/*07*/
+/*06*/
 .logo{
     color: var(--blanco);
 }
@@ -111,7 +112,7 @@ img {
 .logo__bold{
     font-weight: 700;
 }
-/*09*/
+/*07*/
 @media (min-width: 768px){
     .navegacion{
         display: flex;
@@ -124,4 +125,48 @@ img {
     text-align: center;
     font-size: 1.8rem;
     color: var(--blanco);
+}
+
+/*contenido principal*/
+/*10*/
+@media (min-width: 768px){
+    .contenido-principal{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 3rem;
+    }
+}
+
+/*11*/
+.entrada{
+    border-bottom: 1px solid var(--gris);
+    margin-bottom: 2rem;
+}
+
+/*12 para quitarle la linea de separacion al ultimo article*/
+.entrada:last-of-type{
+    border: none;
+    margin-bottom: 0;
+}
+
+/*13*/
+.boton{
+    display: block;
+    font-family: var(--fuenteHeading);
+    color: var(--blanco);
+    text-align: center;
+    padding: 1rem 3rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 768px){
+    .boton{
+        display: inline-block;
+    }
+}
+.boton--primario{
+    background-color: var(--negro);
 }
